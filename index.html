@@ -1,283 +1,234 @@
-
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Varuthapadadha Vaalibar Sangam | வருத்தப்படாத வாலிபர் சங்கம்</title>
+<meta name="description" content="Varuthapadadha Vaalibar Sangam (வருத்தப்படாத வாலிபர் சங்கம்) is a friends' association from PURATHAMBI ELLAM, Tamil Nadu. Join the Sangam.">
+<meta name="keywords" content="Varuthapadadha Vaalibar Sangam, வருத்தப்படாத வாலிபர் சங்கம், VVS, PURATHAMBI ELLAM, Tamil Nadu">
+<meta property="og:title" content="Varuthapadadha Vaalibar Sangam">
+<meta property="og:description" content="The association for young hearts who refuse to worry.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mukta+Malar:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--wall:#f3ecd9;--ink:#1c1a17;--sign:#1aa7e0;--sign-text:#ffd23f;--brick:#e6197f;--card:#fffaf0;--muted:#5d564a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--wall:#1b1a17;--ink:#f3ecd9;--sign:#1aa7e0;--sign-text:#ffd23f;--brick:#ff4fa3;--card:#26241f;--muted:#b9b09c}}
+:root[data-theme="dark"]{--wall:#1b1a17;--ink:#f3ecd9;--sign:#1aa7e0;--sign-text:#ffd23f;--brick:#ff4fa3;--card:#26241f;--muted:#b9b09c}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:'Mukta Malar',system-ui,sans-serif;font-size:18px;line-height:1.65}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brick);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{padding-right:96px!important;display:flex;justify-content:space-between;gap:16px;padding:18px 0;font-weight:600;flex-wrap:wrap}
+nav a{text-decoration:none;margin-left:18px}
+nav a:first-child{margin-left:0}
+nav div:last-child a:hover{color:var(--brick)}
+.signboard{background:#fff200;color:#d4147a;border:8px solid var(--ink);border-radius:6px;padding:44px 24px 36px;text-align:center;margin-top:8px;box-shadow:8px 8px 0 var(--brick)}
+.signboard .ta{font-family:'Mukta Malar';font-weight:800;font-size:clamp(34px,7.5vw,72px);line-height:1.15;margin:0}
+.signboard h1{font-family:'Bowlby One',sans-serif;font-weight:400;font-size:clamp(20px,4.4vw,40px);letter-spacing:.02em;margin:14px 0 0;line-height:1.2}
+.signboard p{margin:18px auto 0;max-width:34ch;color:#1c1a17;font-size:20px}.signboard .ta{color:#d4147a}.signboard h1{color:#0b5fa5}
+.est{display:inline-block;margin-top:22px;background:#e6197f;color:#fff;font-weight:800;padding:4px 16px;border-radius:99px;font-size:16px}
+section{padding:64px 0 0}
+h2{font-family:'Bowlby One',sans-serif;font-weight:400;font-size:clamp(26px,4vw,36px);margin:0 0 14px;line-height:1.2}
+.lead{max-width:62ch}
+.rules{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:14px}
+.rules li{background:var(--card);border-left:10px solid var(--brick);padding:14px 20px;border-radius:0 10px 10px 0}
+.rules li:nth-child(even){border-left-color:var(--sign);margin-left:clamp(0px,4vw,48px)}
+.rules b{display:block;font-size:20px}
+.rules span{color:var(--muted)}
+.talk{background:var(--ink);color:var(--wall);padding:28px;border-radius:10px;margin-top:28px;font-size:22px;font-weight:600}
+.talk small{display:block;font-weight:400;font-size:16px;opacity:.75;margin-top:6px}
+form{background:var(--card);border:3px solid var(--ink);border-radius:10px;padding:24px;display:grid;gap:16px;max-width:560px;margin-top:20px}
+label{font-weight:600;display:grid;gap:6px}
+input,select{font:inherit;padding:10px 12px;border:2px solid var(--ink);border-radius:6px;background:var(--wall);color:var(--ink)}
+button{font:inherit;font-weight:800;background:var(--brick);color:#fff;border:0;border-radius:6px;padding:12px 20px;cursor:pointer}
+button:hover{filter:brightness(1.1)}
+#msg{font-weight:600;min-height:1.6em;margin:0}
+footer{margin-top:72px;padding:28px 0 36px;border-top:3px dashed var(--muted);color:var(--muted);font-size:16px}
+@media (prefers-reduced-motion:no-preference){.signboard{animation:drop .7s cubic-bezier(.2,1.4,.4,1) both}@keyframes drop{from{transform:translateY(-30px) rotate(-1.5deg);opacity:0}}}
 
-  <title>Varuthapadadha Vaalibar Sangam | வருத்தப்படாத வாலிபர் சங்கம்</title>
+.paper{background:#fdfcf8;color:#1c1a17;border:4px double #1e293b;border-radius:10px;padding:24px;margin-top:20px;font-size:17px}
+.paper h3{margin:0;text-align:center;font-family:'Bowlby One',sans-serif;font-weight:400;font-size:clamp(20px,4vw,30px);line-height:1.2}
+.paper .ta{text-align:center;color:#9a3d12;font-weight:800;font-size:22px;margin:4px 0}
+.paper .bar{background:#1e293b;color:#fff;padding:10px 16px;border-radius:6px;font-weight:800;margin:18px 0 10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.paper .bar span{color:#ffd23f}
+.paper label{margin:14px 0 0;display:block}
+.paper label small{display:block;font-weight:400;color:#555}
+.paper input[type=text],.paper input[type=date]{width:100%;background:#fff;color:#1c1a17;border-color:#1e293b}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end}
+.opts{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.opts label{margin:0;border:2px solid #94a3b8;border-radius:8px;padding:6px 12px;display:flex;gap:8px;align-items:center;font-weight:600}
+.photo{width:140px;height:180px;border:3px dashed #1e293b;border-radius:8px;margin:12px auto;display:grid;place-items:center;text-align:center;font-size:14px;cursor:pointer;overflow:hidden;font-weight:600}
+.photo img{width:100%;height:100%;object-fit:cover}
+.decl{border:3px solid #1e293b;background:#fffaf0;border-radius:8px;padding:16px;margin-top:14px;text-align:center;font-weight:800;font-size:20px}
+.decl label{font-size:16px;font-weight:600;text-align:left;display:flex;gap:10px;margin-top:14px}
+canvas{width:100%;height:150px;background:#fff;border:2px dashed #1e293b;border-radius:8px;touch-action:none;display:block}
+.tabs button{background:#e2e8f0;color:#1c1a17;padding:6px 14px}.tabs button.on{background:#0f172a;color:#fff}
+.seal{display:block;margin:14px auto 0;max-width:300px}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.acts button{flex:1 1 220px;background:#1e3a8a}.acts .g{background:#0a7a56}
+#err{color:#b3372a;font-weight:800;margin:10px 0 0}
+.bookmark{position:fixed;top:0;right:max(14px,env(safe-area-inset-right,0px));z-index:20;width:80px;padding:calc(env(safe-area-inset-top,0px) + 12px) 6px 34px;background:#e6197f;color:#fff200;text-decoration:none;font-weight:800;font-size:12px;line-height:1.25;text-align:center;clip-path:polygon(0 0,100% 0,100% 100%,50% 84%,0 100%);transition:padding-top .2s}
+.bookmark:hover{padding-top:calc(env(safe-area-inset-top,0px) + 22px)}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bookmark{transition:none}}
+#apply{scroll-margin-top:12px}
+.topnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:#e6197f;color:#fff;box-shadow:0 3px 0 #fff200}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#e6197f;z-index:31}
+.topnav .in{max-width:960px;margin:0 auto;padding:8px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Bowlby One',sans-serif;font-size:14px;line-height:1.2}
+.brand img{height:40px;width:auto}
+.menu{display:flex;gap:6px;align-items:center}
+.menu a{color:#fff;text-decoration:none;font-weight:800;padding:8px 14px;border-radius:99px}
+.menu a:hover{background:rgba(255,255,255,.22)}
+.menu a.cta{background:#fff200;color:#1c1a17}.menu a.cta:hover{background:#fff;}
+.burger{display:none;background:none;border:2px solid #fff;color:#fff;font-size:22px;line-height:1;padding:4px 12px;border-radius:8px}
+@media (max-width:760px){.burger{display:block}.menu{display:none;width:100%;flex-direction:column;align-items:stretch;padding-bottom:10px}.menu.open{display:flex}.menu a{text-align:center}.brand span{max-width:190px}}
+#home,#rules,#about,#apply{scroll-margin-top:84px}
+.evgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px;margin-top:24px;align-items:start}
+.ev{margin:0;background:var(--card);border:3px solid var(--ink);border-radius:10px;overflow:hidden;box-shadow:6px 6px 0 var(--brick)}
+.ev h3{margin:0;padding:10px 14px;background:#fff200;color:#1c1a17;font-family:'Bowlby One',sans-serif;font-weight:400;font-size:17px;line-height:1.25;border-bottom:3px solid var(--ink)}
+.ev img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover;object-position:center 25%}
+.evgroup{grid-column:1/-1}
+.evphotos{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;padding:8px;align-items:start}
+.evphotos img{border-radius:6px;max-height:340px}
+.wrap{overflow-x:clip}
+.view{display:none}.view.on{display:block}
+@media (prefers-reduced-motion:no-preference){.view.on{animation:slideIn .45s cubic-bezier(.2,.8,.2,1) both}@keyframes slideIn{from{transform:translateX(70px);opacity:0}to{transform:none;opacity:1}}}
+.menu a.act:not(.cta){background:rgba(255,255,255,.28)}
 
-  <meta name="description" content="Welcome to Varuthapadadha Vaalibar Sangam, a friendship community built around sharing memories, meeting people and making lasting friendships.">
-
-  <meta name="keywords" content="Varuthapadadha Vaalibar Sangam, வருத்தப்படாத வாலிபர் சங்கம், VVS, PURATHAMBI ELLAM, Tamil Nadu">
-
-  <meta name="author" content="Varuthapadadha Vaalibar Sangam">
-
-  <meta property="og:title" content="Varuthapadadha Vaalibar Sangam">
-  <meta property="og:description" content="An association for friendship, memories and happiness.">
-  <meta property="og:type" content="website">
-
-  <meta name="theme-color" content="#101027">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mukta+Malar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      min-height: 100vh;
-      font-family: 'Mukta Malar', sans-serif;
-      color: white;
-      background:
-        radial-gradient(circle at top left, #492477, transparent 40%),
-        radial-gradient(circle at bottom right, #143b70, transparent 40%),
-        #101027;
-      overflow-x: hidden;
-    }
-
-    .background-glow {
-      position: fixed;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: rgba(255, 180, 50, 0.12);
-      filter: blur(90px);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .glow-one {
-      top: 10%;
-      left: -100px;
-    }
-
-    .glow-two {
-      bottom: 5%;
-      right: -100px;
-      background: rgba(130, 80, 255, 0.18);
-    }
-
-    header {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      padding: 25px 15px;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .brand {
-      font-family: 'Bowlby One', sans-serif;
-      font-size: clamp(19px, 4vw, 30px);
-      color: #ffd66b;
-      letter-spacing: 1px;
-    }
-
-    .brand-tamil {
-      font-size: clamp(17px, 3vw, 23px);
-      margin-top: 5px;
-      font-weight: 700;
-    }
-
-    main {
-      position: relative;
-      z-index: 1;
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 55px 18px;
-    }
-
-    .welcome-card {
-      width: 100%;
-      max-width: 850px;
-      padding: 55px 25px;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: 28px;
-      background: rgba(255,255,255,0.07);
-      box-shadow: 0 20px 70px rgba(0,0,0,0.3);
-      backdrop-filter: blur(12px);
-      animation: appear 1s ease both;
-    }
-
-    .welcome-label {
-      display: inline-block;
-      padding: 8px 20px;
-      border: 1px solid rgba(255,214,107,0.5);
-      border-radius: 30px;
-      color: #ffd66b;
-      font-size: 14px;
-      letter-spacing: 2px;
-      margin-bottom: 25px;
-    }
-
-    h1 {
-      color: #ffd66b;
-      font-size: clamp(28px, 6vw, 55px);
-      line-height: 1.5;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      font-family: 'Bowlby One', sans-serif;
-      font-size: clamp(19px, 4vw, 32px);
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
-    .description {
-      max-width: 600px;
-      margin: 0 auto;
-      color: #e0dff0;
-      font-size: 17px;
-      line-height: 1.9;
-    }
-
-    .divider {
-      width: 90px;
-      height: 4px;
-      background: #ffd66b;
-      border-radius: 10px;
-      margin: 30px auto;
-    }
-
-    .welcome-tamil {
-      color: #ffd66b;
-      font-size: 25px;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    .community {
-      color: #d4c9ff;
-      font-size: 15px;
-      letter-spacing: 2px;
-    }
-
-    .welcome-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 13px 30px;
-      border-radius: 30px;
-      background: #ffd66b;
-      color: #17132d;
-      text-decoration: none;
-      font-weight: 800;
-      transition: 0.3s;
-    }
-
-    .welcome-button:hover {
-      transform: translateY(-4px);
-      background: white;
-      box-shadow: 0 8px 25px rgba(255,214,107,0.2);
-    }
-
-    footer {
-      position: relative;
-      z-index: 1;
-      padding: 22px 15px;
-      text-align: center;
-      color: #aaa8c5;
-      font-size: 13px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    @keyframes appear {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 500px) {
-      .welcome-card {
-        padding: 40px 18px;
-      }
-
-      .description {
-        font-size: 15px;
-      }
-    }
-  </style>
+@media print{.topnav,body::before,nav,header,#about,#rules,footer,.acts,.tabs,.noprint{display:none!important}body{background:#fff}section{padding:0!important}.signboard{display:none}}
+</style>
 </head>
-
 <body>
+<div class="topnav"><div class="in"><a class="brand" href="#home"><img id="nb" alt="" width="40" height="46"><span>Varuthapadadha Vaalibar Sangam</span></a>
+<button type="button" class="burger" id="bg" aria-expanded="false" aria-controls="mn" aria-label="Menu">☰</button>
+<div class="menu" id="mn" role="navigation" aria-label="Main menu"><a href="#home">Home</a><a href="#about">About</a><a href="#events">Sangam events</a><a href="#contact">Contact</a><a href="#apply" class="cta">Job application</a></div></div></div>
+<div class="wrap">
 
-  <div class="background-glow glow-one"></div>
-  <div class="background-glow glow-two"></div>
+<div class="view on" id="v-home">
+<header class="signboard" id="home">
+<img id="emblem" src="images/emblem.webp" alt="Varuthapadadha Vaalibar Sangam emblem" width="230" style="display:block;margin:0 auto 14px;max-width:62%;height:auto">
+<p class="ta" lang="ta">வருத்தப்படாத வாலிபர் சங்கம்</p>
+<h1>Varuthapadadha Vaalibar Sangam</h1>
+<p>The association for young hearts who refuse to worry.</p>
+<span class="est">PURATHAMBI ELLAM, Tamil Nadu</span>
+</header>
 
-  <header>
-    <div class="brand">VARUTHAPADADHA VAALIBAR SANGAM</div>
-    <div class="brand-tamil">வருத்தப்படாத வாலிபர் சங்கம்</div>
-  </header>
+<section id="rules">
+<h2>Sangam rules</h2>
+<ul class="rules">
+<li><b>Worry is banned at the tea stall.</b><span>Bring stories and jokes. Leave the tension at the door.</span></li>
+<li><b>Every member shows up for every other member.</b><span>Weddings, exams, shifting houses or a flat tyre at midnight.</span></li>
+<li><b>Contribute to the gang.</b><span>Give your time, ideas and effort for the Sangam.</span></li>
+<li><b>Show respect to Pura and Puna Thambiii.</b><span>Always, without exception.</span></li>
+</ul>
+</section>
+</div>
+<div class="view" id="v-about">
+<section id="about">
+<h2>Who we are</h2>
+<p class="lead">We are a gang of friends who believe most problems get smaller after tea, a good laugh and a bit of company. The Sangam meets, helps each other out, celebrates every small win and turns up whenever a friend needs a hand.</p>
+<div class="talk">“Kavalaipadatha. Namma irukkom.”<small>Don’t worry. We’re here.</small></div>
+</section>
 
-  <main>
-    <section class="welcome-card">
 
-      <div class="welcome-label">WELCOME TO OUR COMMUNITY</div>
 
-      <h1>வருத்தப்படாத வாலிபர் சங்கம்</h1>
+</div>
+<div class="view" id="v-apply">
+<section id="apply">
+<h2>Join the Sangam: membership application</h2>
+<p class="lead noprint">Fill in the form, sign it, then save or print your copy. It stays on your device; nothing is sent to anyone yet.</p>
+<div class="paper" id="paper">
+<div style="font-weight:800">FORM NO: VVS-REC-01</div>
+<div style="color:#475569">Youth &amp; Friendship Association · Tamil Nadu</div>
+<p class="ta" lang="ta">வருத்தப்படாத வாலிபர் சங்கம்</p>
+<h3>Varuthapadadha Vaalibar Sangam</h3>
+<div class="bar" style="justify-content:center;text-align:center">Official Sangam membership &amp; recruitment application</div>
+<div class="row" style="justify-content:space-between"><b>Application No: <span id="no"></span></b><b>Date: <span id="dt"></span></b></div>
+<div class="photo" id="ph"><input type="file" id="pf" accept="image/*" hidden><span>Tap to upload passport size photo<br>(3.5cm × 4.5cm)</span></div>
+<div class="bar">Section A: Personal &amp; eligibility particulars <span lang="ta">தனிப்பட்ட மற்றும் தகுதி விவரங்கள்</span></div>
+<label>1. Name *<small>முழுப் பெயர் (in block letters)</small><input type="text" id="nm" style="text-transform:uppercase" autocomplete="name"></label>
+<div class="row"><label style="flex:2">2. Date of birth * <small>பிறந்த நாள்</small><input type="date" id="dob"></label><label style="flex:1">3. Age * <small>வயது</small><input type="text" id="age" readonly placeholder="Yrs"></label></div>
+<label>4. Location * <small>இருப்பிடம் / ஊர் / கிராமம்</small><input type="text" id="loc" placeholder="e.g. PURATHAMBI ELLAM"></label>
+<label>5. Current occupation / status * <small>உனது தற்போதைய வேலை</small><input type="text" id="occ"></label>
+<label>6. Do you know how to play football? * <small>கால் பந்து விளையாட தெரியுமா</small></label>
+<div class="opts"><label><input type="radio" name="fb" value="Yes"> ஆம் (Yes)</label><label><input type="radio" name="fb" value="No"> இல்லை (No)</label><label><input type="radio" name="fb" value="A little"> கொஞ்சம் தெரியும் (A little)</label></div>
+<div class="bar">Section B: Official oath &amp; solemn declaration <span lang="ta">உறுதிமொழிப் பத்திரம்</span></div>
+<div class="decl"><u>DECLARATION</u><p style="margin:12px 0 0">“I LOVE PURAAA THAMBI ON MY LIFE AND I WILL ALWAYS STAY TRUE TO HIM 💋”</p>
+<label><input type="checkbox" id="ag"> I solemnly agree, affirm, and abide by the above Sangam Declaration in full consciousness.</label></div>
+<svg class="seal" id="seal" viewBox="0 0 300 150" role="img" aria-label="Sangam approval seal"><ellipse cx="150" cy="75" rx="140" ry="68" fill="none" stroke="#2b4a9b" stroke-width="5"/><ellipse cx="150" cy="75" rx="128" ry="57" fill="none" stroke="#2b4a9b" stroke-width="1.5"/><g fill="#2b4a9b" font-family="Mukta Malar,sans-serif" font-weight="800" text-anchor="middle"><text x="150" y="48" font-size="13">VARUTHAPADADHA VAALIBAR SANGAM</text><text x="150" y="68" font-size="15">• APPROVED •</text><text x="150" y="112" font-size="14">தலைவர் • PRESIDENT</text></g><path d="M105 88q15-14 30 0t30 0t30 0" fill="none" stroke="#2b4a9b" stroke-width="3"/></svg>
+<div style="text-align:center;font-weight:800;border-top:3px solid #1e293b;margin:6px 0 18px;padding-top:6px"><span lang="ta">தலைவர்</span> SIGNATURE</div>
+<div class="row tabs noprint" style="justify-content:space-between;margin-bottom:8px"><div><button type="button" id="td" class="on">Draw sign</button> <button type="button" id="tt">Type sign</button></div><button type="button" id="cl" style="background:none;color:#b3372a;padding:6px">Clear signature</button></div>
+<canvas id="cv" width="800" height="300"></canvas>
+<input type="text" id="ts" placeholder="Type your name as signature" hidden style="width:100%;font-family:'Brush Script MT',cursive;font-size:30px">
+<div style="text-align:center;font-weight:800;border-top:3px solid #1e293b;margin-top:8px;padding-top:6px">SIGNATURE <small style="font-weight:400">(Applicant’s signature / விண்ணப்பதாரர் கையொப்பம்)</small></div>
+<p style="font-size:14px;color:#475569;text-align:center;margin:14px 0 0">Note: All applications are subject to scrutiny by the Sangam President (தலைவர்). Keep a copy of your Application Reference Number for future Sangam meetings.</p>
+</div>
+<p id="err" role="alert"></p>
+<div class="acts"><button type="button" id="pr">Submit &amp; print / save PDF</button><button type="button" id="sm" class="g" hidden style="background:#d4147a">Send application by email</button><button type="button" id="dl" class="g">Download official copy (PNG)</button></div>
+</section>
+</div>
+<div class="view" id="v-events">
+<section id="events">
+<h2>Sangam events</h2>
+<p class="lead">Moments from our meetups, matches and celebrations.</p>
+<div class="evgrid">
+<figure class="ev evgroup"><h3>80th Independence Day</h3><div class="evphotos"><img src="images/photo2.jpg" alt="80th Independence Day invitation: flag hoisting ceremony at Green Valley Turf on August 15th at 2:00 PM" width="900" height="900"><img src="images/photo3.jpg" alt="Three friends with the Independence Day poster behind them" width="900" height="675"><img src="images/photo4.jpg" alt="Selfie at the turf" width="675" height="900"><img src="images/photo5.jpg" alt="Two friends with the Independence Day poster behind them" width="900" height="675"><img src="images/photo6.jpg" alt="Two teams lined up facing each other on the turf" width="506" height="900"></div></figure>
+<figure class="ev evgroup"><h3>Ken’s Birthday Bash</h3><div class="evphotos"><img src="images/photo7.jpg" alt="Two friends in football jerseys" width="720" height="540"><img src="images/photo8.jpg" alt="Two friends standing by the turf" width="675" height="900"><img src="images/photo9.jpg" alt="Two friends beside the turf at night" width="675" height="900"><img src="images/photo10.jpg" alt="Two friends in football kits on the turf" width="675" height="900"><img src="images/photo11.jpg" alt="Three friends taking a selfie outdoors" width="675" height="900"></div></figure>
+<figure class="ev evgroup"><h3>Vinay Thambi Turf</h3><div class="evphotos"><img src="images/photo12.jpg" alt="Group of friends at the turf in the daytime" width="900" height="675"><img src="images/photo13.jpg" alt="Sangam members lined up at the turf at night" width="675" height="900"><img src="images/photo14.jpg" alt="Two friends at the turf under floodlights" width="675" height="900"><img src="images/photo15.jpg" alt="Two friends at a school sports day" width="675" height="900"><img src="images/photo16.jpg" alt="Players on the turf seen from above" width="900" height="675"><img src="images/photo17.jpg" alt="A birthday cake on a wooden table" width="675" height="900"></div></figure>
 
-      <h2>Varuthapadadha Vaalibar Sangam</h2>
-
-      <p class="description">
-        Welcome to our friendship community!
-        A place to share unforgettable memories,
-        meet new people, celebrate friendship
-        and create beautiful moments together.
-      </p>
-
-      <div class="divider"></div>
-
-      <div class="welcome-tamil">வணக்கம்!</div>
-
-      <p class="community">
-        FRIENDSHIP • MEMORIES • HAPPINESS
-      </p>
-
-      <a class="welcome-button" href="#about">
-        Discover Our Sangam
-      </a>
-
-    </section>
-  </main>
-
-  <section id="about" style="position:relative; z-index:1; text-align:center; padding:35px 20px 55px;">
-    <h2 style="color:#ffd66b;">About Our Sangam</h2>
-    <p style="max-width:650px; margin:15px auto; color:#e0dff0; line-height:1.9;">
-      Varuthapadadha Vaalibar Sangam is a community
-      celebrating friendship, togetherness and memories.
-      Every friendship has a story, and every moment
-      is worth remembering.
-    </p>
-  </section>
-
-  <footer>
-    © <span id="year"></span> Varuthapadadha Vaalibar Sangam.
-    All Rights Reserved.
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
-
+</div>
+</section>
+</div>
+<div class="view" id="v-contact">
+<section id="contact">
+<h2>Contact us</h2>
+<p class="lead">Questions about the Sangam, or about your application? Write to us and we’ll reply.</p>
+<div class="talk" style="background:#fff200;color:#000;border:4px solid #000">Email<small style="font-size:22px;opacity:1;margin-top:8px"><a href="mailto:monibalu1702@gmail.com" style="color:#000;font-weight:800;word-break:break-all">monibalu1702@gmail.com</a></small></div>
+<p style="margin-top:20px"><a href="mailto:monibalu1702@gmail.com?subject=Hello%20Sangam" style="display:inline-block;background:#e6197f;color:#fff;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:8px">Send us an email</a></p>
+</section>
+</div>
+<footer>© <span id="y"></span> Varuthapadadha Vaalibar Sangam. Made with friends, not worries.</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+var $=function(i){return document.getElementById(i)};
+$('nb').src=$('emblem').src;
+$('bg').onclick=function(){var o=$('mn').classList.toggle('open');this.setAttribute('aria-expanded',o)};
+document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){$('mn').classList.remove('open');$('bg').setAttribute('aria-expanded','false')})});
+function show(){var n=(location.hash||'#home').slice(1),v=$('v-'+n);if(!v){n='home';v=$('v-home')}
+document.querySelectorAll('.view').forEach(function(x){x.classList.remove('on')});void v.offsetWidth;v.classList.add('on');
+document.querySelectorAll('.menu a').forEach(function(a){var on=a.getAttribute('href')=='#'+n;a.classList.toggle('act',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+window.scrollTo(0,0)}
+window.addEventListener('hashchange',show);show();
+$('y').textContent=new Date().getFullYear();
+$('no').textContent='VVS-'+new Date().getFullYear()+'-'+String(Math.floor(Math.random()*9000)+1000);
+$('dt').textContent=new Date().toLocaleDateString('en-GB');
+$('dob').max=new Date().toISOString().slice(0,10);
+$('dob').addEventListener('change',function(){var d=new Date(this.value),t=new Date();if(isNaN(d)){$('age').value='';return}var a=t.getFullYear()-d.getFullYear();if(t<new Date(t.getFullYear(),d.getMonth(),d.getDate()))a--;$('age').value=a>=0?a:''});
+$('ph').addEventListener('click',function(){$('pf').click()});
+$('pf').addEventListener('click',function(e){e.stopPropagation()});
+$('pf').addEventListener('change',function(){var f=this.files[0];if(!f)return;var r=new FileReader();r.onload=function(){var s=$('ph').querySelector('span'),i=$('ph').querySelector('img')||document.createElement('img');i.src=r.result;i.alt='Applicant photo';$('ph').appendChild(i);if(s)s.hidden=true};r.readAsDataURL(f)});
+var cv=$('cv'),cx=cv.getContext('2d'),dr=false,inked=false,mode='draw';
+cx.lineWidth=4;cx.lineCap='round';cx.strokeStyle='#0f172a';
+function pt(e){var r=cv.getBoundingClientRect();return[(e.clientX-r.left)*cv.width/r.width,(e.clientY-r.top)*cv.height/r.height]}
+cv.addEventListener('pointerdown',function(e){dr=true;var p=pt(e);cx.beginPath();cx.moveTo(p[0],p[1]);cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',function(e){if(!dr)return;var p=pt(e);cx.lineTo(p[0],p[1]);cx.stroke();inked=true});
+['pointerup','pointercancel'].forEach(function(n){cv.addEventListener(n,function(){dr=false})});
+function setMode(m){mode=m;$('td').className=m=='draw'?'on':'';$('tt').className=m=='type'?'on':'';cv.hidden=m!='draw';$('ts').hidden=m!='type'}
+$('td').onclick=function(){setMode('draw')};$('tt').onclick=function(){setMode('type')};
+$('cl').onclick=function(){cx.clearRect(0,0,cv.width,cv.height);inked=false;$('ts').value=''};
+function check(){var m=[];if(!$('nm').value.trim())m.push('name');if(!$('dob').value)m.push('date of birth');if(!$('loc').value.trim())m.push('location');if(!$('occ').value.trim())m.push('occupation');if(!document.querySelector('input[name=fb]:checked'))m.push('football answer');if(!$('ag').checked)m.push('declaration tick');if(!(mode=='draw'?inked:$('ts').value.trim()))m.push('signature');$('err').textContent=m.length?'Please complete: '+m.join(', ')+'.':'';return !m.length}
+function typed(){var t=$('ts');if(mode=='type'){var s=document.createElement('div');s.id='tsp';s.style.cssText="font-family:'Brush Script MT',cursive;font-size:34px;border:2px dashed #1e293b;border-radius:8px;padding:10px;text-align:center;background:#fff";s.textContent=t.value;t.hidden=true;t.after(s)}}
+function untyped(){var s=$('tsp');if(s){s.remove();if(mode=='type')$('ts').hidden=false}}
+$('pr').onclick=function(){if(!check())return;window.print()};
+$('dl').onclick=function(){if(!check())return;typed();html2canvas($('paper'),{scale:2,backgroundColor:'#fdfcf8'}).then(function(c){untyped();var a=document.createElement('a');a.download=$('no').textContent+'.png';a.href=c.toDataURL('image/png');a.click()}).catch(function(){untyped();$('err').textContent='Could not create the image. Use Submit & print / save PDF instead.'})};
+var OWNER_EMAIL='monibalu1702@gmail.com';
+if(OWNER_EMAIL)$('sm').hidden=false;
+$('sm').onclick=function(){if(!check())return;var f=document.querySelector('input[name=fb]:checked').value;var b='Application No: '+$('no').textContent+'\nName: '+$('nm').value+'\nDate of birth: '+$('dob').value+' (age '+$('age').value+')\nLocation: '+$('loc').value+'\nOccupation: '+$('occ').value+'\nPlays football: '+f+'\nDeclaration accepted: yes\n\n(Attach your downloaded official copy PNG to this email.)';location.href='mailto:'+OWNER_EMAIL+'?subject='+encodeURIComponent('VVS application '+$('no').textContent)+'&body='+encodeURIComponent(b)};
+</script>
 </body>
 </html>
