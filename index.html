@@ -1,32 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="ta">
 <head>
-<meta name="description" content="Welcome to Varuthapadadha Vaalibar Sangam! A friendship community built around sharing memories, meeting new people, and making lasting friendships.">
-<meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Varuthapadadha Vaalibar Sangam | வருத்தப்படாத வாலிபர் சங்கம்</title>
 
-<title>Varuthapadadha Vaalibar Sangam | வருத்தப்படாத வாலிபர் சங்கம்</title>
+  <meta name="description" content="Welcome to Varuthapadadha Vaalibar Sangam, a friendship community built around sharing memories, meeting people and making lasting friendships.">
 
-<meta name="description" content="Varuthapadadha Vaalibar Sangam (வருத்தப்படாத வாலிபர் சங்கம்) is a friends' association from PURATHAMBI ELLAM, Tamil Nadu. Join the Sangam.">
+  <meta name="keywords" content="Varuthapadadha Vaalibar Sangam, வருத்தப்படாத வாலிபர் சங்கம், VVS, PURATHAMBI ELLAM, Tamil Nadu">
 
-<meta name="keywords" content="Varuthapadadha Vaalibar Sangam, வருத்தப்படாத வாலிபர் சங்கம், VVS, PURATHAMBI ELLAM, Tamil Nadu">
+  <meta name="author" content="Varuthapadadha Vaalibar Sangam">
 
-<meta property="og:title" content="Varuthapadadha Vaalibar Sangam">
-<meta property="og:description" content="The association for young hearts who refuse to worry.">
-<meta property="og:type" content="website">
+  <meta property="og:title" content="Varuthapadadha Vaalibar Sangam">
+  <meta property="og:description" content="An association for friendship, memories and happiness.">
+  <meta property="og:type" content="website">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="theme-color" content="#101027">
 
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mukta+Malar:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<style>
-/* Your original CSS goes here */
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Mukta+Malar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Mukta Malar', sans-serif;
+      color: white;
+      background:
+        radial-gradient(circle at top left, #492477, transparent 40%),
+        radial-gradient(circle at bottom right, #143b70, transparent 40%),
+        #101027;
+      overflow-x: hidden;
+    }
+
+    .background-glow {
+      position: fixed;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255, 180, 50, 0.12);
+      filter: blur(90px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .glow-one {
+      top: 10%;
+      left: -100px;
+    }
+
+    .glow-two {
+      bottom: 5%;
+      right: -100px;
+      background: rgba(130, 80, 255, 0.18);
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 25px 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .brand {
+      font-family: 'Bowlby One', sans-serif;
+      font-size: clamp(19px, 4vw, 30px);
+      color: #ffd66b;
+      letter-spacing: 1px;
+    }
+
+    .brand-tamil {
+      font-size: clamp(17px, 3vw, 23px);
+      margin-top: 5px;
+      font-weight: 700;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 55px 18px;
+    }
+
+    .welcome-card {
+      width: 100%;
+      max-width: 850px;
+      padding: 55px 25px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 28px;
+      background: rgba(255,255,255,0.07);
+      box-shadow: 0 20px 70px rgba(0,0,0,0.3);
+      backdrop-filter: blur(12px);
+      animation: appear 1s ease both;
+    }
+
+    .welcome-label {
+      display: inline-block;
+      padding: 8px 20px;
+      border: 1px solid rgba(255,214,107,0.5);
+      border-radius: 30px;
+      color: #ffd66b;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: #ffd66b;
+      font-size: clamp(28px, 6vw, 55px);
+      line-height: 1.5;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: 'Bowlby One', sans-serif;
+      font-size: clamp(19px, 4vw, 32px);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #e0dff0;
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .divider {
+      width: 90px;
+      height: 4px;
+      background: #ffd66b;
+      border-radius: 10px;
+      margin: 30px auto;
+    }
+
+    .welcome-tamil {
+      color: #ffd66b;
+      font-size: 25px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .community {
+      color: #d4c9ff;
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+
+    .welcome-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 13px 30px;
+      border-radius: 30px;
+      background: #ffd66b;
+      color: #17132d;
+      text-decoration: none;
+      font-weight: 800;
+      transition: 0.3s;
+    }
+
+    .welcome-button:hover {
+      transform: translateY(-4px);
+      background: white;
+      box-shadow: 0 8px 25px rgba(255,214,107,0.2);
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      padding: 22px 15px;
+      text-align: center;
+      color: #aaa8c5;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .welcome-card {
+        padding: 40px 18px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div style="text-align:center; padding:40px 15px;">
-    <h1>வருத்தப்படாத வாலிபர் சங்கம்</h1>
-    <h2>Varuthapadadha Vaalibar Sangam</h2>
-    <p>Welcome to our friendship community!</p>
-  </div>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header>
+    <div class="brand">VARUTHAPADADHA VAALIBAR SANGAM</div>
+    <div class="brand-tamil">வருத்தப்படாத வாலிபர் சங்கம்</div>
+  </header>
+
+  <main>
+    <section class="welcome-card">
+
+      <div class="welcome-label">WELCOME TO OUR COMMUNITY</div>
+
+      <h1>வருத்தப்படாத வாலிபர் சங்கம்</h1>
+
+      <h2>Varuthapadadha Vaalibar Sangam</h2>
+
+      <p class="description">
+        Welcome to our friendship community!
+        A place to share unforgettable memories,
+        meet new people, celebrate friendship
+        and create beautiful moments together.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="welcome-tamil">வணக்கம்!</div>
+
+      <p class="community">
+        FRIENDSHIP • MEMORIES • HAPPINESS
+      </p>
+
+      <a class="welcome-button" href="#about">
+        Discover Our Sangam
+      </a>
+
+    </section>
+  </main>
+
+  <section id="about" style="position:relative; z-index:1; text-align:center; padding:35px 20px 55px;">
+    <h2 style="color:#ffd66b;">About Our Sangam</h2>
+    <p style="max-width:650px; margin:15px auto; color:#e0dff0; line-height:1.9;">
+      Varuthapadadha Vaalibar Sangam is a community
+      celebrating friendship, togetherness and memories.
+      Every friendship has a story, and every moment
+      is worth remembering.
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Varuthapadadha Vaalibar Sangam.
+    All Rights Reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
 </body>
 </html>
